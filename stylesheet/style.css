@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main_box{
+    background: url(../assets/images/photo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.main_box #check{
+    display: none;
+}
+
+.main_box .btn_one {
+    color: white;
+    font-size: 1.6vw;
+    line-height: 2vw;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    transition: all 0.2s linear;
+}
+
+
+.btn_one i{
+    cursor: pointer;
+}
+.sidebar_menu{
+    border: .2vw solid #ffffff61;
+    box-shadow: rgba(255, 255, 255, .5);
+    background-color: rgb(255 255 255 / 14%);
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    left: -30vw;
+}
+
+.logo{
+    position: absolute;
+    top: 1vw;
+    left: 3vw;
+    font-size: 1.3vw;
+    transition: all 0.3s ease;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_two{
+    position: absolute;
+    top: 1vw;
+    left: 18vw;
+    color: #fff;
+    font-size: 1.4vw;
+    transition: all 0.2s linear;
+}
+
+.btn_two i{
+    cursor: pointer;
+}
+
+.menu li {
+    /* margin-top: 2vw; */
+    list-style: none;
+    padding: .8vw 1vw;
+    border: 0.2vw solid transparent; 
+    transition: all 0.3s ease;
+    position: relative;
+    top: 4vw;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.267);
+    border: 0.2vw solid rgba(255, 255, 255, 0.267);
+}
+
+.menu li i{
+    color: #fff;
+    font-size: 1.3vw;
+    padding-right: 1vw;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+
+.sidebar_menu .social_media a{
+    position: relative;
+    left: 4vw;
+    bottom: -6vw;
+    font-size: 1.4vw;
+    color: #fff;
+    opacity: .5;
+    padding: .4vw;
+    transition: all 0.3s ease;
+}
+
+.sidebar_menu .social_media a:hover{
+    opacity: 1;
+}
+
+.sidebar_menu .social_media a i:hover{
+    transform: scale(1.2);
+}
+
+
+#check:checked ~ .sidebar_menu{
+    left: 0vw;
+}
+
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
